@@ -396,16 +396,16 @@
     <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Toggle sidebar menu">
         <i class="fas fa-bars"></i>
     </button>
-    <!-- Sidebar -->
-    <div class="sidebar" id="sidebar">
-        <h3>Quick Links</h3>
-        <ul>
-            <li><a href="https://cbcsettlementfundings-my.sharepoint.com/:w:/g/personal/jrairigh_cbcsettlementfunding_com/EW5Qiva7E21JkbyIQax_C0MBIIiZNey8mg1l_u4FjxFvdQ?e=UOaht5" target="_blank" title="Download Advance Document"><i class="fas fa-file-alt"></i> Advance Document</a></li>
-            <li><a href="https://cbcsettlementfundings-my.sharepoint.com/:b:/g/personal/jrairigh_cbcsettlementfunding_com/EceYDgEAuFFAsfhP8Bon9hABgCG3KMfmjaqWk-kXsgCiBQ?e=aKI9sk" target="_blank" title="Download Fasano Document"><i class="fas fa-file-alt"></i> Fasano Document</a></li>
-            <li><a href="https://cbcsettlementfundings-my.sharepoint.com/:w:/g/personal/jrairigh_cbcsettlementfunding_com/EcfbEWrE5uFNk7rQ_vbiyuEBPB2Tx14mp6nGhSZMUMKgjw?e=dZl12V" target="_blank" title="Download Authorization to Release Information"><i class="fas fa-file-alt"></i> Authorization to Release Information</a></li>
-        </ul>
-    </div>
-
+   <!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+    <h3>Quick Links</h3>
+    <ul>
+        <li><a href="https://cbcsettlementfundings-my.sharepoint.com/:w:/g/personal/jrairigh_cbcsettlementfunding_com/EW5Qiva7E21JkbyIQax_C0MBIIiZNey8mg1l_u4FjxFvdQ?e=UOaht5" target="_blank" title="Download Advance Document"><i class="fas fa-file-alt"></i> Advance Document</a></li>
+        <li><a href="https://cbcsettlementfundings-my.sharepoint.com/:b:/g/personal/jrairigh_cbcsettlementfunding_com/EceYDgEAuFFAsfhP8Bon9hABgCG3KMfmjaqWk-kXsgCiBQ?e=aKI9sk" target="_blank" title="Download Fasano Document"><i class="fas fa-file-alt"></i> Fasano Document</a></li>
+        <li><a href="https://cbcsettlementfundings-my.sharepoint.com/:w:/g/personal/jrairigh_cbcsettlementfunding_com/EcfbEWrE5uFNk7rQ_vbiyuEBPB2Tx14mp6nGhSZMUMKgjw?e=dZl12V" target="_blank" title="Download Authorization to Release Information"><i class="fas fa-file-alt"></i> Authorization to Release Information</a></li>
+        <li><a href="https://cbcsettlementfundings-my.sharepoint.com/:w:/g/personal/jrairigh_cbcsettlementfunding_com/EZGgcilwEdBHmnBywjSFM3ABdyIxBmjDIfvvk33fdfgP_A?e=0AkBOR" target="_blank" title="Download Best Interest Declaration"><i class="fas fa-file-alt"></i> Best Interest Declaration</a></li>
+    </ul>
+</div>
     <!-- Header -->
     <div class="header">
         <img src="https://i.postimg.cc/XJymhjMj/CBC-Logo.png" alt="CBC Settlement Funding Logo" id="headerLogo">
@@ -546,10 +546,10 @@
     <script>
         // Define stateData and insuranceData globally
         const stateData = {
-            "AL": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Brooke Davis", expectedLegalFee: "$2500" },
-            "AR": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Whit Light", expectedLegalFee: "$2200" },
-            "AK": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "Yes", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Jess Webster", expectedLegalFee: "$3500" },
-            "AZ": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "Dec", noPoachState: "No", additionalNotes: "", legalCounsel: "Amy Schwartz", expectedLegalFee: "$2600" },
+            "AL": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Brooke Davis", expectedLegalFee: "$2500", holdTime: "3" },
+            "AK": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "Yes", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Jess Webster", expectedLegalFee: "$3500", holdTime: "10" },
+            "AZ": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "Dec", noPoachState: "No", additionalNotes: "", legalCounsel: "Amy Schwartz", expectedLegalFee: "$2600", holdTime: "3" },
+            "AR": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Whit Light", expectedLegalFee: "$2200", holdTime: "3" },
             "CA": { 
                 rateCap: "None but if possible stay under 24.99%", 
                 requiresIPA: "No", 
@@ -557,16 +557,17 @@
                 noPoachState: "No", 
                 additionalNotes: "California has specific county rules. Orange County judges prefer effective rates below 20%, but deals have been done at 25% in the last 3-4 years, so it's not a hard rule. Fresno County is the hardest in the state; judges scrutinize all facts closely, including any priors, and may push for a lower rate to give the client more money (often requires IPA after approving the sale, which can be difficult).", 
                 legalCounsel: "James Felton", 
-                expectedLegalFee: "$4000" 
+                expectedLegalFee: "$4000", 
+                holdTime: "10" 
             },
-            "CO": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Chad McShane", expectedLegalFee: "$2750" },
-            "CT": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Doug Evans", expectedLegalFee: "$3000" },
-            "DE": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "Yes", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Rob Gibbs", expectedLegalFee: "$3500" },
-            "DC": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "McMillan Metro (Elyse & Jose)", expectedLegalFee: "$2500" },
-            "FL": { rateCap: "None but possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "Aff", noPoachState: "No", additionalNotes: "", legalCounsel: "Ken Dion", expectedLegalFee: "$2200" },
-            "GA": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "Yes", additionalNotes: "", legalCounsel: "Shannon Carpenter", expectedLegalFee: "$2600" },
-            "HI": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "TBD", expectedLegalFee: "$5000" },
-            "ID": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Paul Okner", expectedLegalFee: "$2800" },
+            "CO": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Chad McShane", expectedLegalFee: "$2750", holdTime: "3" },
+            "CT": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Doug Evans", expectedLegalFee: "$3000", holdTime: "3" },
+            "DE": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "Yes", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Rob Gibbs", expectedLegalFee: "$3500", holdTime: "10" },
+            "DC": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "McMillan Metro (Elyse & Jose)", expectedLegalFee: "$2500", holdTime: "3" },
+            "FL": { rateCap: "None but possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "Aff", noPoachState: "No", additionalNotes: "", legalCounsel: "Ken Dion", expectedLegalFee: "$2200", holdTime: "10" },
+            "GA": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "Yes", additionalNotes: "", legalCounsel: "Shannon Carpenter", expectedLegalFee: "$2600", holdTime: "3" },
+            "HI": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "TBD", expectedLegalFee: "$5000", holdTime: "1" },
+            "ID": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Paul Okner", expectedLegalFee: "$2800", holdTime: "3" },
             "IL": { 
                 rateCap: "None but if possible stay under 24.99%", 
                 requiresIPA: "No", 
@@ -574,21 +575,22 @@
                 noPoachState: "No", 
                 additionalNotes: "Cook County has specific rules. Cook County (Chicago) has an unwritten rule that effective rates need to be at 15.00% or below.", 
                 legalCounsel: "Mack & Tragos", 
-                expectedLegalFee: "$2500" 
+                expectedLegalFee: "$2500", 
+                holdTime: "3" 
             },
-            "IN": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Mack & Tragos", expectedLegalFee: "$2500" },
-            "IA": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Mack & Tragos", expectedLegalFee: "$2500" },
-            "KS": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Amber Steinbeck", expectedLegalFee: "$2300" },
-            "KY": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Kevin Mack", expectedLegalFee: "$2700" },
-            "LA": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "Yes", requiresAffDec: "No", noPoachState: "Yes", additionalNotes: "", legalCounsel: "John Toerner", expectedLegalFee: "$3000" },
-            "ME": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "Yes", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Gray & Palmer", expectedLegalFee: "$2200" },
-            "MD": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "Yes", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "McMillan Metro (Elyse & Jose)", expectedLegalFee: "$2500" },
-            "MA": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Doug Evans", expectedLegalFee: "$3000" },
-            "MI": { rateCap: "25%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Mack & Tragos", expectedLegalFee: "$2500" },
-            "MN": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "Aff", noPoachState: "Yes", additionalNotes: "", legalCounsel: "Katrina Turman", expectedLegalFee: "$2750" },
-            "MS": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Eric Dillon", expectedLegalFee: "$2100" },
-            "MO": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Amber Steinbeck", expectedLegalFee: "$2300" },
-            "MT": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Christopher Betchie", expectedLegalFee: "$3000" },
+            "IN": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Mack & Tragos", expectedLegalFee: "$2500", holdTime: "10" },
+            "IA": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Mack & Tragos", expectedLegalFee: "$2500", holdTime: "3" },
+            "KS": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Amber Steinbeck", expectedLegalFee: "$2300", holdTime: "3" },
+            "KY": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Kevin Mack", expectedLegalFee: "$2700", holdTime: "N/A" },
+            "LA": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "Yes", requiresAffDec: "No", noPoachState: "Yes", additionalNotes: "", legalCounsel: "John Toerner", expectedLegalFee: "$3000", holdTime: "10" },
+            "ME": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "Yes", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Gray & Palmer", expectedLegalFee: "$2200", holdTime: "10" },
+            "MD": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "Yes", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "McMillan Metro (Elyse & Jose)", expectedLegalFee: "$2500", holdTime: "10" },
+            "MA": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Doug Evans", expectedLegalFee: "$3000", holdTime: "10" },
+            "MI": { rateCap: "25%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Mack & Tragos", expectedLegalFee: "$2500", holdTime: "N/A" },
+            "MN": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "Aff", noPoachState: "Yes", additionalNotes: "", legalCounsel: "Katrina Turman", expectedLegalFee: "$2750", holdTime: "10" },
+            "MS": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Eric Dillon", expectedLegalFee: "$2100", holdTime: "3" },
+            "MO": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Amber Steinbeck", expectedLegalFee: "$2300", holdTime: "10" },
+            "MT": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Christopher Betchie", expectedLegalFee: "$3000", holdTime: "3" },
             "NE": { 
                 rateCap: "None but if possible stay under 24.99%", 
                 requiresIPA: "No", 
@@ -596,10 +598,11 @@
                 noPoachState: "No", 
                 additionalNotes: "Lincoln County used to have judges who wanted all deals below 15.00%, but those judges are mostly retired, so deals can now be done at 29.99% if desired.", 
                 legalCounsel: "Marc Odgaard", 
-                expectedLegalFee: "$2500" 
+                expectedLegalFee: "$2500", 
+                holdTime: "3" 
             },
-            "NV": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "Aff", noPoachState: "Yes", additionalNotes: "", legalCounsel: "Hector Carabajal", expectedLegalFee: "$2800" },
-            "NH": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Doug Evans", expectedLegalFee: "$3000" },
+            "NV": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "Aff", noPoachState: "Yes", additionalNotes: "", legalCounsel: "Hector Carabajal", expectedLegalFee: "$2800", holdTime: "3" },
+            "NH": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Doug Evans", expectedLegalFee: "$3000", holdTime: "10" },
             "NJ": { 
                 rateCap: "None but if possible stay under 24.99%", 
                 requiresIPA: "No", 
@@ -607,9 +610,10 @@
                 noPoachState: "No", 
                 additionalNotes: "New Jersey has varying county rules. Counties like Atlantic, Cumberland, Bergen, Middlesex, and Ocean have judges who may require rates at or below 15.00%, depending on the judge assigned.", 
                 legalCounsel: "Dugalic & Landau", 
-                expectedLegalFee: "$2800" 
+                expectedLegalFee: "$2800", 
+                holdTime: "3" 
             },
-            "NM": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Juan Marquez", expectedLegalFee: "$2800" },
+            "NM": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Juan Marquez", expectedLegalFee: "$2800", holdTime: "3" },
             "NY": { 
                 rateCap: "None but if possible stay under 24.99%", 
                 requiresIPA: "No", 
@@ -617,10 +621,11 @@
                 noPoachState: "No", 
                 additionalNotes: "New York has specific county rules. Judges vary by county on their opinion of these deals. In the 5 boroughs of NYC, deals are heavily scrutinized. Manhattan (New York County) needs to be priced in the high single digits/low double digits. Brooklyn (Kings County), Bronx (Bronx County), Queens (Queens County), and Staten Island (Richmond County) all differ; it's best to ask UW before pricing a New York file.", 
                 legalCounsel: "Sacco & Fillas (Luigi)", 
-                expectedLegalFee: "$3500" 
+                expectedLegalFee: "$3500", 
+                holdTime: "10" 
             },
-            "NC": { rateCap: "12.5% (5% above current prime rate, changes monthly)", requiresIPA: "Yes", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "RL Adams", expectedLegalFee: "$2850" },
-            "ND": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Katrina Turman", expectedLegalFee: "$2750" },
+            "NC": { rateCap: "12.5% (5% above current prime rate, changes monthly)", requiresIPA: "Yes", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "RL Adams", expectedLegalFee: "$2850", holdTime: "N/A" },
+            "ND": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Katrina Turman", expectedLegalFee: "$2750", holdTime: "3" },
             "OH": { 
                 rateCap: "None but if possible stay under 24.99%", 
                 requiresIPA: "No", 
@@ -628,10 +633,11 @@
                 noPoachState: "No", 
                 additionalNotes: "Cuyahoga County has specific rules. Cuyahoga County (Cleveland) has an unwritten rule that the disclosure quotient must exceed 50.00% for court approval, but many deals have been completed below this threshold depending on cash flow, term of payments, purchase price, and the client's reasons for transfer.", 
                 legalCounsel: "Steve Mastrantonio", 
-                expectedLegalFee: "$2600" 
+                expectedLegalFee: "$2600", 
+                holdTime: "10" 
             },
-            "OK": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Henry Dow (Kathy Keener)", expectedLegalFee: "$1500" },
-            "OR": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "Dec", noPoachState: "No", additionalNotes: "", legalCounsel: "Paul Okner", expectedLegalFee: "$2800" },
+            "OK": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Henry Dow (Kathy Keener)", expectedLegalFee: "$1500", holdTime: "3" },
+            "OR": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "Dec", noPoachState: "No", additionalNotes: "", legalCounsel: "Paul Okner", expectedLegalFee: "$2800", holdTime: "14" },
             "PA": { 
                 rateCap: "None but if possible stay under 24.99%", 
                 requiresIPA: "No", 
@@ -639,11 +645,12 @@
                 noPoachState: "No", 
                 additionalNotes: "Pennsylvania has specific county rules. Allegheny County (Pittsburgh) has a rotation of 5 judges who try to get rates down to 15.00% or lower and will scrutinize the client's situation very closely.", 
                 legalCounsel: "Dugalic & Landau / Margolis Edelstein (Ron Reitz)", 
-                expectedLegalFee: "$2800 - $3000" 
+                expectedLegalFee: "$2800 - $3000", 
+                holdTime: "10" 
             },
-            "RI": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Doug Evans", expectedLegalFee: "$3000" },
-            "SC": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "Yes", additionalNotes: "", legalCounsel: "Richard (Rick) Steadman", expectedLegalFee: "$2300" },
-            "SD": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Glenn L. Roth (JGW counsel)", expectedLegalFee: "$2500" },
+            "RI": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Doug Evans", expectedLegalFee: "$3000", holdTime: "10" },
+            "SC": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "Yes", additionalNotes: "", legalCounsel: "Richard (Rick) Steadman", expectedLegalFee: "$2300", holdTime: "3" },
+            "SD": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Glenn L. Roth (JGW counsel)", expectedLegalFee: "$2500", holdTime: "3" },
             "TN": { 
                 rateCap: "None but if possible stay under 24.99%", 
                 requiresIPA: "No", 
@@ -651,7 +658,8 @@
                 noPoachState: "No", 
                 additionalNotes: "Shelby County has specific rules. Shelby County (Memphis) has a judge whose initial reaction to applications is to deny the petition; there are no unwritten rules, and the judge reviews each case individually to determine what the client must show for approval (Shelby has 3 or 4 judges, so the odds of drawing this strict judge are 1 in 3 or 1 in 4).", 
                 legalCounsel: "Kevin Mack", 
-                expectedLegalFee: "$3000" 
+                expectedLegalFee: "$3000", 
+                holdTime: "10" 
             },
             "TX": { 
                 rateCap: "None but if possible stay under 24.99%", 
@@ -660,15 +668,16 @@
                 noPoachState: "No", 
                 additionalNotes: "Harris County has specific rules. Harris County (Houston) has a few judges who prefer deals not to exceed 25%, but it depends on the judge assigned after filing; Texas counsel will provide a heads-up on the judge assignment, which is passed on to the rep and Mike immediately.", 
                 legalCounsel: "Brian Dear", 
-                expectedLegalFee: "$3000" 
+                expectedLegalFee: "$3000", 
+                holdTime: "3" 
             },
-            "UT": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Fabian VanCott (Clint Hansen is counsel)", expectedLegalFee: "$2850" },
-            "VT": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "TBD", expectedLegalFee: "$3000" },
-            "VA": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "McMillan Metro (Elyse & Jose)", expectedLegalFee: "$2500" },
-            "WA": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Paul Okner", expectedLegalFee: "$2800" },
-            "WV": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Kay Casto", expectedLegalFee: "$3000" },
-            "WI": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "Aff", noPoachState: "No", additionalNotes: "", legalCounsel: "Mack & Tragos", expectedLegalFee: "$2500" },
-            "WY": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "TBD", expectedLegalFee: "$3000" }
+            "UT": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Fabian VanCott (Clint Hansen is counsel)", expectedLegalFee: "$2850", holdTime: "3" },
+            "VT": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "TBD", expectedLegalFee: "$3000", holdTime: "10" },
+            "VA": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "McMillan Metro (Elyse & Jose)", expectedLegalFee: "$2500", holdTime: "3" },
+            "WA": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Paul Okner", expectedLegalFee: "$2800", holdTime: "3" },
+            "WV": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "Kay Casto", expectedLegalFee: "$3000", holdTime: "N/A" },
+            "WI": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "Aff", noPoachState: "No", additionalNotes: "", legalCounsel: "Mack & Tragos", expectedLegalFee: "$2500", holdTime: "N/A" },
+            "WY": { rateCap: "None but if possible stay under 24.99%", requiresIPA: "No", requiresAffDec: "No", noPoachState: "No", additionalNotes: "", legalCounsel: "TBD", expectedLegalFee: "$3000", holdTime: "3" }
         };
 
         const insuranceData = {
@@ -1025,6 +1034,10 @@
                     "WI": "https://cbcsettlementfundings-my.sharepoint.com/:w:/g/personal/jrairigh_cbcsettlementfunding_com/EVcnVEL7CAVInZTMZfgAt34BfsoYSzs3qht6FF5fUi7MYw?e=fjTTcV"
                 };
 
+                // Define states with Anthony Lazzaro as underwriter
+                const lazzaroStates = ["AL", "AK", "AZ", "AR", "CT", "GA", "HI", "IA", "ID", "IL", "IN", "LA", "MA", "MI", "MT", "NY", "NH", "OH", "OR", "RI", "SC", "TN", "VT", "WA", "WV", "DC"];
+                const underwriter = lazzaroStates.includes(state) ? "Anthony Lazzaro" : "Mike Dalby";
+
                 // Display state information
                 if (state && stateData[state]) {
                     const data = stateData[state];
@@ -1042,6 +1055,13 @@
                         affDecDisplay += ` <a href="${affDecLinks[state]}" target="_blank" title="Download ${docType} Document"><i class="fas fa-file-alt"></i></a>`;
                     }
 
+                    // Format hold time display with "Days" and add tooltip
+                    let holdTimeDisplay = data.holdTime;
+                    if (holdTimeDisplay !== "N/A") {
+                        holdTimeDisplay += " Days";
+                    }
+                    holdTimeDisplay += ` <span class="tooltip">?<span class="tooltiptext">number of days the state requires the client to take to make sure they're 100% comfortable with this transfer</span></span>`;
+
                     stateInfo.innerHTML = `
                         <div class="section-header" onclick="toggleSection('stateInfo')" aria-expanded="true">
                             <h3>${document.getElementById("stateSelect").options[document.getElementById("stateSelect").selectedIndex].text}</h3>
@@ -1054,6 +1074,8 @@
                             <p><strong>No Poach State:</strong> ${data.noPoachState} <span class="tooltip">?<span class="tooltiptext">A 'No Poach State' prohibits soliciting clients from other funding companies.</span></span></p>
                             <p><strong>Legal Counsel:</strong> ${data.legalCounsel}</p>
                             <p><strong>Expected Legal Fee:</strong> ${data.expectedLegalFee}</p>
+                            <p><strong>Hold Time:</strong> ${holdTimeDisplay}</p>
+                            <p><strong>Underwriter:</strong> ${underwriter}</p>
                             <p><strong>Additional Notes:</strong> ${additionalNotes}</p>
                         </div>
                     `;
